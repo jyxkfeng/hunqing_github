@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+		<title>清单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">	
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js/jquery1.9.1.min.js"></script>		
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="qingdan warp">
+			
+		<!--data_selbox-->
+		<div class="data_selbox">
+			<span>租赁日期：</span><span class="inputbox"><i class="ico_data"></i><input value="" type="datetime" placeholder="请选择开始时间" id="datetimepicker1" /></span><span>&nbsp;~&nbsp;</span><span class="inputbox"><i class="ico_data"></i><input value="" placeholder="请选择结束时间" id="datetimepicker2" /></span>
+		</div>
+		<!--data_selbox-->
+		
+		<!--list-->
+		<div class="shopItem">
+		<div class="shop_box">
+			<div class="shopsel_box">
+				<span class="ico_selbg active"></span>
+				<span class="ico_shop"></span>
+				<span>婚纱摄影店</span>
+				<span class="ico_right"></span>
+			</div>
+		</div>
+		
+		<div class="pr_selbox">
+			
+			<div class="teamPlayItem  clearfix">
+					<div class="pd_slcbt">
+						<span class="ico_selbg active"></span>
+					</div>
+					<div class="fl"><a><img src="img/sp2.png"></a></div>
+					<div class="fc">
+						<p class="tt">带班</p>
+						<p class="price">￥200</p>
+						<p class="des">租金：￥300</p></div>
+					<div class="fr">
+						
+						<p class="sel_num"><span class="plus"></span><input type="number" value="1"><span class="less"></span></p>
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--list-->
+		
+		<!--list-->
+		<div class="shopItem">
+		<div class="shop_box">
+			<div class="shopsel_box">
+				<span class="ico_selbg "></span>
+				<span class="ico_shop"></span>
+				<span>婚纱摄影店</span>
+				<span class="ico_right"></span>
+			</div>
+		</div>
+		
+		<div class="pr_selbox">
+			
+			<div class="teamPlayItem  clearfix">
+					<div class="pd_slcbt">
+						<span class="ico_selbg "></span>
+					</div>
+					<div class="fl"><a><img src="img/sp2.png"></a></div>
+					<div class="fc">
+						<p class="tt">带班</p>
+						<p class="price">￥200</p>
+						<p class="des">租金：￥300</p></div>
+					<div class="fr">
+						
+						<p class="sel_num"><span class="plus"></span><input type="number" value="1"><span class="less"></span></p>
+					</div>
+				</div>
+				<div class="teamPlayItem  clearfix">
+					<div class="pd_slcbt">
+						<span class="ico_selbg"></span>
+					</div>
+					<div class="fl"><a><img src="img/sp2.png"></a></div>
+					<div class="fc">
+						<p class="tt">带班</p>
+						<p class="price">￥200</p>
+						<p class="des">租金：￥300</p></div>
+					<div class="fr">
+						
+						<p class="sel_num"><span class="plus"></span><input type="number" value="1"><span class="less"></span></p>
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--list-->
+			
+		</div>
+		
+		<div class="yuding_foot qingdan_btbox clearfix">
+			<div class="pd_slcbt">
+						<span class="ico_selbg"></span>
+					</div>
+			<div class="fl">
+				<p class="tm">预退：￥1000</p>
+				<p class="pc">合计:<span class="fw-b">￥2000</span></p>
+			</div>
+			<div class="fr btn_qrdd">
+				立即预定
+			</div>
+		</div>
+		
+		<div class="mask" ></div>
+		<div class="sure_qd">
+			<span><img src="img/ckqd.png" /><p>查看清单</p></span>
+			<span><img src="img/qrdd.png"/><p>确认订单</p></span>
+			<div class="close_qd"></div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			$('.btn_qrdd').click(function(){
+				$('.mask,.sure_qd').show();
+				
+			})
+		</script>
+		
+	</body>
+</html>

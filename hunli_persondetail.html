@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+		<title>婚礼人员_详情</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">	
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js/jquery1.9.1.min.js"></script>		
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!--下拉模拟引入，去除下拉模拟请移除 -->
+		    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    		<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    		<script type="text/javascript" src="js/framework7.min.js" ></script>
+    	<!--下拉模拟引入，去除下拉模拟请移除 -->	
+    	
+    	
+	</head>
+	<body>
+		
+		<div class="warp team_detail hunliperson_detail">
+			<!--team_ad-->
+			<div class="team_ad">
+				<div class="fl">
+					<a><img src="img/ico_person2.png" /></a>
+				</div>
+				<div class="fr">
+					<p class="tt">原野映像<small>司仪</small></p>
+					<p class="starts">
+							<img src="img/all_start.png"  />
+							<img src="img/all_start.png"  />
+							<img src="img/all_start.png"  />
+							<img src="img/all_start.png"  />
+							<img src="img/none_start.png"  />
+					</p>
+					<p class="des">这边写个人的简介，主要起到宣传自己的作用字数不宜太多，言简意赅即可，可写50字以内言简意赅即可。</p>
+				</div>
+			</div>
+			<!--team_ad-->
+			
+			<div class="menusBox">
+				<ul class="clearfix">
+					<li><b>5</b><br />
+						团队人员
+					</li>
+					<li><b>425</b><br />
+						粉丝
+					</li>
+					<li class="gz"><div class="bt"><i class="ico_jia"></i>关注</div></li>
+					<!--<li class="gz"><div class="bt active"><i class="ico_jia "></i>已关注</div></li>
+				-->
+				</ul>
+			</div>
+			<!--menusBox2-->
+			<div class="menusBox2">
+				<ul class="clearfix">
+					<li>
+						<i class="ico_info"></i>
+						服务须知
+					</li>
+					<li>
+						<i class="ico_msg"></i>
+						用户评价
+					</li>
+				</ul>
+			</div>
+			<!--menusBox2-->
+			
+			<div class="teamplayList">
+				<div class="teamTitle">
+					<p><i class="ico_block"></i><span>作品</span></p>
+				</div>
+				<div class="prd_box">
+					<img src="img/sp5.jpg" width="100%"/>
+					<p>维多利亚的秘密</p>
+					
+				</div>
+				<div class="prd_box">
+					<img src="img/sp5.jpg" width="100%"/>
+					<p>维多利亚的秘密</p>
+					
+				</div>
+		
+			
+				
+			</div>
+			
+			
+		
+		
+		<div class="yuding_foot hunliperson_footer">
+			<div class="fl">
+				<p class="tm">订金：￥500</p>
+				<p class="pc">总价：<span>￥2000/场</span></p>
+			</div>
+			<div class="fr opendatapick">
+				立即预定
+			</div>
+		</div>
+		
+		
+		<div class="picker-data-box">
+			<div class="time_munebox clearfix">
+				<div class="fl sel_tm active">
+					<div class="sel_box ">
+						<p>到场时间</p><input type="text" placeholder="" readonly="" id="picker_intime" class="">
+					</div>
+				</div>
+				<div class="fl sel_tm">
+					<div class="sel_box">
+						<p>离场时间</p><input type="text" placeholder="" readonly="" id="picker_outtime" class=""></div>
+					</div>
+			</div>
+			
+				<div class="picker-times" id="picker-timein-container"></div>
+			
+				<div class="picker-times" id="picker-timeout-container"></div>
+			
+			<div class="totle_money">
+				共4小时 总价：<span class="c-red">￥2000元</span>
+			</div>
+			
+			<div class="selt_btn">
+				<p class="cancel">取消</p>
+				<p class="query">确认</p>
+			</div>
+		</div>
+		
+		</div>
+		
+		<script type="text/javascript">
+		  setTimeout(function(){
+		  	//2秒弹出 模拟时间选择 器 
+		  	
+		  	//1默认 先出进场 离场的 2时间选择器隐藏
+		    $('.picker-times').eq(1).hide();
+		    
+		    //弹出选择器 
+		    //开发的时候 绑定事件 运行这条
+		  	$('.picker-data-box').css('bottom','0');
+		  	//弹出选择器 
+		  	
+		  },2000);
+		  
+		  $('.opendatapick').click(function(){ $('.picker-data-box').css('bottom','0');})
+		  
+		  $('.query,.cancel').click(function(){ $('.picker-data-box').css('bottom','-100%');})
+		  
+		  $('.sel_tm').click(function(){
+		  	$(this).addClass('active').siblings('.sel_tm').removeClass('active');
+		  	$('.picker-times').eq($(this).index()).show().siblings('.picker-times').hide();
+		  })
+		
+		var myApp = new Framework7();
+
+			function timescroll(input, container) {
+				var pickerDevice = myApp.picker({
+					input: input,
+					container: container,
+					toolbar: false,
+					rotateEffect: true,
+					cols: [
+						// Months
+						{
+							values: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+							textAlign: 'left'
+						},
+						// Days
+						{
+							values: (function() {
+								var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+								for (var i = 0; i <= 23; i++) {
+									arr[i] = arr[i] + '日'
+								}
+								return arr;
+							})()
+						},
+						// Space divider
+						{
+							divider: true,
+							content: '  '
+						},
+						// Hours
+						{
+							values: (function() {
+								var arr = [];
+								for (var i = 0; i <= 23; i++) {
+									arr.push(i + '：00');
+								}
+								return arr;
+							})(),
+						},
+			
+					]
+				});
+			
+			}
+			timescroll('#picker_intime','#picker-timein-container');
+			timescroll('#picker_outtime','#picker-timeout-container');
+		
+		</script>
+	</body>
+</html>

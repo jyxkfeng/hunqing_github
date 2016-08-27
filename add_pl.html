@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+		<title>填写评论</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">	
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js/jquery1.9.1.min.js"></script>		
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="add_pl">
+		
+		<div class=" warp">
+				
+				<div class="pl_sel">
+					<div class="fl">
+						给ta评分
+					</div>
+					<div class="fr">
+						<div class="starts">
+							<img class="start"  src="img/ico_star_y.png"  />
+							<img class="start"  src="img/ico_star_y.png"  />
+							<img class="start"  src="img/ico_star_y.png"  />
+							<img class="start"  src="img/ico_star_y.png"  />
+							<img class="start"  src="img/ico_star_gr.png"  />
+							<span class="pj">好评</span>
+							<input hidden="" class="pjvalue" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="pl_text">
+					<textarea name="" rows="" cols="" placeholder="请输入本次的评价内容"></textarea>
+					
+					
+				</div>
+				
+				
+		</div>
+			
+			<div class="foot_btn">
+				<span class="bt">发表评论</span>
+			</div>
+			
+		<script>
+				
+				$('.start').click(function(){
+					
+					if($(this).index()==0||$(this).index()==1){
+						$('.pj').html('差评');
+					}
+					else if($(this).index()==2||$(this).index()==3){
+						$('.pj').html('中评');
+					}
+					else  if($(this).index()==4){
+						$('.pj').html('好评');
+					}
+					$('.pjvalue').val($(this).index());
+					
+					switch($(this).index()){
+						case 0:
+						$('.start').attr('src','img/ico_star_gr.png');
+						$('.start').eq(0).attr('src','img/ico_star_y.png');
+						break;
+						case 1:
+						$('.start').attr('src','img/ico_star_gr.png');
+						$('.start').eq(0).attr('src','img/ico_star_y.png');
+						$('.start').eq(1).attr('src','img/ico_star_y.png');
+							break;
+						case 2:
+						$('.start').attr('src','img/ico_star_gr.png');
+						$('.start').eq(0).attr('src','img/ico_star_y.png');
+						$('.start').eq(1).attr('src','img/ico_star_y.png');
+						$('.start').eq(2).attr('src','img/ico_star_y.png');
+							break;
+						case 3:
+						$('.start').attr('src','img/ico_star_gr.png');
+						$('.start').eq(0).attr('src','img/ico_star_y.png');
+						$('.start').eq(1).attr('src','img/ico_star_y.png');
+						$('.start').eq(2).attr('src','img/ico_star_y.png');
+						$('.start').eq(3).attr('src','img/ico_star_y.png');
+						break;
+						case 4:
+						$('.start').attr('src','img/ico_star_y.png');
+						break;
+						
+						default:$('.start').attr('src','img/ico_star_y.png');
+						
+					}
+					
+					
+				
+				});
+				
+			
+		</script>	
+			
+	</body>
+</html>

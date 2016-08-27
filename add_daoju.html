@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+		<title>添加道具</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">	
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js/jquery1.9.1.min.js"></script>		
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!--下拉模拟引入，去除下拉模拟请移除 -->
+		    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    		<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    		<script type="text/javascript" src="js/framework7.min.js" ></script>
+    	<!--下拉模拟引入，去除下拉模拟请移除 -->	
+	</head>
+	<body>
+		<div class="warp add_djwarp">
+			<div class="addBox1">
+				<ul class="clearfix">
+					<li><img src="img/ad_sp1.png" /><i class="ico_close"></i></li>
+					<li><img src="img/ad_sp1.png" /><i class="ico_close"></i></li>
+					<li><img src="img/ad_sp1.png" /><i class="ico_close"></i></li>
+					<li><img src="img/ad_sp1.png" /><i class="ico_close"></i></li>
+					<li><img src="img/add_imgbg.png" /></li>
+				</ul>
+				
+				<div class="reservebox">
+					<p class="text_input"><span>道具名称：</span><input value="" placeholder="请输入道具名称" /></p>
+					<p class="text_input"><span>道具规格：</span><input value="" placeholder="请输入道具规格" /></p>
+					<p class="text_input"><span>道具颜色：</span><input value="" placeholder="请输入道具颜色" /></p>
+					<p class="text_input nobt"><span>道具单位：</span><input value="" placeholder="请输入道具单位" /></p>
+				</div>
+			</div>
+			
+			<div class="addBox1 addBox2">
+				
+				
+				<div class="reservebox">
+					
+					<div class="text_input"><span>分类:</span>
+						<!--两种方式 下拉模拟 或者 手机自带 -->
+						<!--<select class="addBox_sel">
+		                    <option>我是分类1</option>
+		                    <option>我是分类2</option>
+		                 </select>-->
+		                 <!--下拉模拟-->
+		                 <div class="item-content">
+			              <div class="item-inner">
+			                <div class="item-input">
+			                  <input type="text" placeholder="分类" readonly="" id="picker_fl" class="">
+			                </div>
+			              </div>
+			            </div>
+			            <!--下拉模拟-->
+					</div>
+					
+					<p class="text_input"><span>道具价值：</span><input value="" type="number" placeholder="36.8" /></p>
+					<p class="text_input"><span>租金价格:</span><input value="" type="number" placeholder="请输入租金价格" /></p>
+					<p class="text_input "><span>库存：</span><input value="" type="number" placeholder="请输入库存" /></p>
+				</div>
+			</div>
+			
+		</div>
+		
+			<div class="foot_btn">
+			<div class="bt">发布道具</div>
+		</div>
+		<div class="picker-fenlei-box">
+			<div class="picker-title clearfix"><p>选择分类 </p><span class="pocker_fl_close">确定</span></div>
+			<div id="picker-fenlei-container"></div>
+		</div>
+		
+		<div class="mask"></div>
+		
+		<script type="text/javascript">
+			var myApp = new Framework7();
+			$('#picker_fl').click(function(){
+				$('.picker-fenlei-box').css('bottom',0);
+				$('.mask').show();
+				
+				
+			})
+			$('.pocker_fl_close').click(function(){
+				$('.picker-fenlei-box').css('bottom','-100%');
+				$('.mask').show();
+			})
+			var pickerDevice = myApp.picker({
+				    input: '#picker_fl',
+				    container: '#picker-fenlei-container',
+				    toolbar: false,
+				    rotateEffect: true,
+				    cols: [
+				        {
+				            textAlign: 'center',
+				            values: ['我是分类1', '我是分类2','我是分类3','我是分类4','我是分类5','我是分类6']
+				        }
+				       
+				    ]
+				});
+			
+		</script>
+		
+	</body>
+</html>

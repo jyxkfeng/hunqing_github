@@ -95,7 +95,7 @@
 			</div>
 			
 			
-		
+		<div class="mask"></div>
 		
 		<div class="yuding_foot hunliperson_footer">
 			<div class="fl">
@@ -143,7 +143,9 @@
 		  	
 		  	//1默认 先出进场 离场的 2时间选择器隐藏
 		    $('.picker-times').eq(1).hide();
-		    
+		    //显示时间
+		    $('.sel_tm').eq(0).addClass('hasdate');
+		    $('.mask').show();
 		    //弹出选择器 
 		    //开发的时候 绑定事件 运行这条
 		  	$('.picker-data-box').css('bottom','0');
@@ -151,12 +153,13 @@
 		  	
 		  },2000);
 		  
-		  $('.opendatapick').click(function(){ $('.picker-data-box').css('bottom','0');})
+		  $('.opendatapick').click(function(){ $('.picker-data-box').css('bottom','0');$('.mask').show();})
 		  
-		  $('.query,.cancel').click(function(){ $('.picker-data-box').css('bottom','-100%');})
+		  $('.query,.cancel').click(function(){ $('.picker-data-box').css('bottom','-100%');$('.mask').hide();})
 		  
 		  $('.sel_tm').click(function(){
 		  	$(this).addClass('active').siblings('.sel_tm').removeClass('active');
+		  	$(this).addClass('hasdate');
 		  	$('.picker-times').eq($(this).index()).show().siblings('.picker-times').hide();
 		  })
 		

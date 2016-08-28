@@ -767,6 +767,8 @@ body{ font-family: "微软雅黑"}
 .myhome .menusBox .item .ico{ width: .205rem; height: .2rem; display:inline-block;}
 .myhome .menusBox .item .ico_fk{ background: url(../img/ico_pay.png) center center no-repeat; background-size: cover;}
 .myhome .menusBox .item .ico_yd{ background: url(../img/ico_myyd.png) center center no-repeat; background-size: cover;}
+.myhome .menusBox .item .ico_djd{ background: url(../img/ico_djd.png) center center no-repeat; background-size: cover;}
+.myhome .menusBox .item .ico_dth{ background: url(../img/ico_dth.png) center center no-repeat; background-size: cover;}
 .myhome .menusBox .item .ico_js{ background: url(../img/ico_js.png) center center no-repeat; background-size: cover;}
 .myhome .menusBox .item .ico_pj{ background: url(../img/ico_pj.png) center center no-repeat; background-size: cover;}
 .myhome .pay_info .text_input{ border-bottom: none; border-top: 1px solid #D5D5D5;}
@@ -868,3 +870,10 @@ body{ font-family: "微软雅黑"}
 .right_muens ul{ margin-top: 1rem;}
 .right_muens ul li{ height: .15rem; line-height: .15rem; text-align: center;}
 .right_muens ul li a{ color: #333333; font-size: .10rem;}
+
+/*联系我们*/
+.contact_box{ position: fixed; bottom: -100%; left: 0; width: 100%; z-index: 10000; border-top: 1px solid #D5D5D5; background: #F5F5F5;}
+.contact_box .title{ height: .26rem; line-height: .26rem; text-align: center; font-size: .14rem;border-bottom: 1px solid #D5D5D5; background: #FFFFFF;}
+.contact_box .des{ height: .34rem; line-height: .34rem; text-align: center; font-size: .14rem;border-bottom: 1px solid #D5D5D5; background: #FFFFFF;}
+.contact_box .cancel_btn{ height: .34rem; line-height: .34rem; text-align: center; font-size: .14rem; border-top: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5; margin-top: .05rem; background: #FFFFFF;}
+

@@ -42,13 +42,14 @@
 				</div>	
 				<div class="menusBox">
 					<div class="item">
+						<i class="ico ico_djd"></i><br />待接单
+					</div>
+					<div class="item">
 						<i class="ico ico_fk"></i><br />待付款
 					</div>
+					
 					<div class="item">
-						<i class="ico ico_yd"></i><br />已预订
-					</div>
-					<div class="item">
-						<i class="ico ico_js"></i><br />待结算
+						<i class="ico ico_dth"></i><br />待提货
 					</div>
 					<div class="item">
 						<i class="ico ico_pj"></i><br />待评价
@@ -72,7 +73,7 @@
 					<p class="text_input clearfix"><span class="fl"><i class="ico ico_ydmy"></i>预定我的</span><span class="fr"><i class="ico_right"></i></span></p>
 					<p class="text_input clearfix"><span class="fl"><i class="ico ico_mysj"></i>我是商家</span><span class="fr"><i class="ico_right"></i></span></p>
 					<p class="text_input clearfix"><span class="fl"><i class="ico ico_help"></i>帮助中心</span><span class="fr"><i class="ico_right"></i></span></p>
-					<p class="text_input clearfix"><span class="fl"><i class="ico ico_contact"></i>联系我们</span><span class="fr"><i class="ico_right"></i></span></p>
+					<p class="text_input clearfix open_contact"><span class="fl"><i class="ico ico_contact"></i>联系我们</span><span class="fr"><i class="ico_right"></i></span></p>
 				</div>	
 				
 				<div class="last_shop">
@@ -91,5 +92,34 @@
 				<li class="my"><a>我的</a></li>
 			</ul>
 		</div>
+		
+		<div class="mask"></div>
+		<div class="contact_box">
+			<div class="title">
+				联系我们
+			</div>
+			<div class="des">
+				在线咨询
+			</div>
+			<div class="des">
+				拨打电话：15050120400
+			</div>
+			<div class="cancel_btn close_contact">
+				取消
+			</div>
+			
+		</div>
+		
+		<script>
+			$('.open_contact').click(function(){
+				$('.mask').show();
+				$('.contact_box').css('bottom',0);
+			})
+			$('.close_contact').click(function(){
+				$('.mask').hide();
+				$('.contact_box').css('bottom','-100%');
+			})
+		</script>
+		
 	</body>
 </html>

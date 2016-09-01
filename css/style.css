@@ -43,10 +43,10 @@ body{ font-family: "微软雅黑"}
 .ico_block{ float: left; width: .055rem; height: .14rem; background: url(../img/ico_block.png) center center no-repeat; background-size: auto .14rem; display: inline-block;margin-right: .05rem; vertical-align: middle;}
 
 /*搜索框*/
-.serch_warp{ height: .41rem; position: absolute;left: 0; top: 0; width: 100%; z-index: 2; background: url(../img/1x1_white.png) repeat;}
+.serch_warp{ height: .41rem; position: absolute;left: 0; top: 0; width: 100%; z-index: 2; background: url(../img/1x1_white.png) repeat;z-index: 10000;}
 .serch_warp .ico_location{ float: left; width: .15rem;height:.18rem; margin-top: .115rem; margin-left: .1rem; background: url(../img/ico_location.png) center center no-repeat; background-size: cover;}
 .serch_warp .logo{ float: left; width: .49rem; height: .195rem; margin-top: .1075rem;margin-left: .1rem; background: url(../img/logo.png) center center no-repeat; background-size: cover;}
-.serch_warp .serch_box{width: 2.0rem; height: .27rem; margin-top: .07rem;margin-left: .1rem; background: #ffffff; float: left; position: relative;}
+.serch_warp .serch_box{width: 2.0rem; height: .27rem; margin-top: .07rem;margin-left: .1rem; background: #ffffff; float: left; position: relative; }
 .serch_warp .serch_box .ico_serch{ position: absolute; width: .125rem; height: .125rem; left: .1rem; top: .0725rem; background: url(../img/ico-search.png) center center no-repeat; background-size: cover;}
 .serch_warp .serch_box input{ width:85%; padding-left: 15%; font-size: .12rem; height: 100%; color: #666666; line-height: .27rem; border: none; background: none;}
 .serch_warp .ico_tel{ width: .17rem; height: .175rem; margin-top: .1175rem;margin-left: .05rem; float: left; background: url(../img/ico_tel.png) center center no-repeat; background-size: cover;}
@@ -906,3 +906,8 @@ body{ font-family: "微软雅黑"}
 .contact_box .des{ height: .34rem; line-height: .34rem; text-align: center; font-size: .14rem;border-bottom: 1px solid #D5D5D5; background: #FFFFFF;}
 .contact_box .cancel_btn{ height: .34rem; line-height: .34rem; text-align: center; font-size: .14rem; border-top: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5; margin-top: .05rem; background: #FFFFFF;}
 
+.yulanqingdan{ }
+.yulanqingdan .title{background: #F5F5F5;height: .26rem; line-height: .26rem; width: 100%; padding: 0 .15rem;font-size: .14rem;}
+.yulanqingdan .pay_info{width: 100%; padding: 0 .15rem; margin: 0;}
+.yulanqingdan .pay_info p{  border-top: 1px solid #E5E5E5;}
+.yulanqingdan .pay_info p:first-child{ border-top: none;}

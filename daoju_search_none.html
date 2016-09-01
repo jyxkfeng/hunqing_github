@@ -36,5 +36,15 @@
 			
 		</div>
 		
+		<div class="mask"></div>
+		<script>
+			$('.serch_box input').blur(function(){
+				$('.mask').hide();
+			})
+			$('.serch_box input').focus(function(){
+				$('.mask').show();
+			})
+			
+		</script>
 	</body>
 </html>

@@ -911,3 +911,6 @@ body{ font-family: "微软雅黑"}
 .yulanqingdan .pay_info{width: 100%; padding: 0 .15rem; margin: 0;}
 .yulanqingdan .pay_info p{  border-top: 1px solid #E5E5E5;}
 .yulanqingdan .pay_info p:first-child{ border-top: none;}
+
+.zhezhao{ display: none; z-index: 10000; position: absolute;left: 0; right: 0; margin: 0 auto; top: 1.37rem; background:url(../img/zz.png) center center no-repeat; background-size: cover; width:2.96rem; height: 3.80rem;}
+.close_zz{ position: absolute; width: 1.21rem; height: .5rem;left: 0; right: 0;  margin: 0 auto; bottom: 0;}

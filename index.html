@@ -127,6 +127,10 @@
 			</ul>
 		</div>
 		
+		<div class="mask"></div>
+		<div class="zhezhao">
+			<div class="close_zz"></div>
+		</div>
 		
 		<div class="footer">
 			<div class="plus_btn"><img src="img/ico_plus.png" width="100%" /></div>
@@ -141,6 +145,15 @@
 		
 	<script type="application/javascript">
 			$(function(){
+				
+			//遮罩
+			$('.mask').show();
+			$('.zhezhao').show();
+			$('.zhezhao').click(function(){
+				$('.mask').hide();
+				$('.zhezhao').hide();
+			})
+				
 			//轮播	
 		   	var mySwiper = new Swiper('.swiper-container', {
 				autoplay: 5000,//可选选项，自动滑动

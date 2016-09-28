@@ -914,3 +914,8 @@ body{ font-family: "微软雅黑"}
 
 .zhezhao{ display: none; z-index: 10000; position: absolute;left: 0; right: 0; margin: 0 auto; top: 1.37rem; background:url(../img/zz.png) center center no-repeat; background-size: cover; width:2.96rem; height: 3.80rem;}
 .close_zz{ position: absolute; width: 1.21rem; height: .5rem;left: 0; right: 0;  margin: 0 auto; bottom: 0;}
+
+.hirstory_search{ display: none; width: 100%;position: absolute; left: 0; top: 0; z-index: 10001; top:.1rem;}
+.hirstory_search .search_item span{ float: left; width: 100%; height: .3rem; line-height: .3rem; margin:0; padding:0; border-bottom: 1px solid #d5d5d5; border-radius: 0; text-align: left; padding: 0 .15rem;}
+.hirstory_search .search_item span .close{ width: .1rem; height: .15rem; line-height: .15rem; float: right; margin: .075rem; font-size: .14rem; transition: all 0.5s;}
+.hirstory_search .search_item { width: 100%;}

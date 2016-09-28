@@ -33,6 +33,19 @@
 			</div>
 			<!--searchBox-->
 			
+			<!--历史搜索-->
+			<div class="hot_searchBox hirstory_search">
+				
+				<div class="search_item clearfix">
+					<span>新娘捧花<a class="close">X</a></span>
+					<span>新娘捧花<a class="close">X</a></span>
+					<span>新娘捧花<a class="close">X</a></span>
+					<span>新娘捧花<a class="close">X</a></span>
+					<span>新娘捧花<a class="close">X</a></span>
+					<span>新娘捧花<a class="close">X</a></span>
+				</div>
+			</div>
+			
 			<!--热门搜索-->
 			<div class="hot_searchBox">
 				<p><i class="ico_hot"></i>热门搜索</p>
@@ -64,12 +77,20 @@
 		</div>
 		<div class="mask"></div>
 		<script>
-		$('.searchInput').blur(function(){
+		$('.mask').click(function(){
 				$('.mask').hide();
+				$('.hirstory_search').hide();
 			})
-		$('.searchInput').focus(function(){
+		
+		$('.searchInput').click(function(){
 				$('.mask').show();
+				$('.hirstory_search').show();
+				
 			})
+		
+		$('.hirstory_search span .close').click(function(){
+			$(this).parent('span').remove();
+		})
 			
 		</script>
 	</body>
